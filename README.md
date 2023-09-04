@@ -17,7 +17,7 @@
    elasticsearch.hosts: ["http://localhost:9200"]
    ```
 
-   ![修改配置文件](E:\学习\elasticsearch\picture\config.png)
+   ![修改配置文件](https://github.com/YyangZhiHeng/Elasticsearch/blob/master/picture/config.png)
 
 
 4. **安装IK分词器(ik分词器版本必须与es版本完全一致，es7.17.12必须用ik7.17.12，不能用ik7.17.1)**
@@ -32,7 +32,7 @@
 
    3. **es基本概念**
 
-      ![倒排索引执行流程](E:\学习\elasticsearch\picture\index.png)
+      ![倒排索引执行流程](https://github.com/YyangZhiHeng/Elasticsearch/blob/master/picture/index.png)
 
       1. 文档和分词
          * 文档：每一条数据就是一个文档
@@ -45,15 +45,15 @@
    
       1. mapping映射，常见的属性
    
-         ![mapping](E:\学习\elasticsearch\picture\mapping.png)
+         ![mapping](https://github.com/YyangZhiHeng/Elasticsearch/blob/master/picture/mapping.png)
    
          特殊属性：经纬度
    
-         ![geo_point](E:\学习\elasticsearch\picture\geo_point.png)
+         ![geo_point](https://github.com/YyangZhiHeng/Elasticsearch/blob/master/picture/geo_point.png)
    
          多个查询条件，搜索一个目标：
    
-         ![copy_to](E:\学习\elasticsearch\picture\copy_to.png)
+         ![copy_to](https://github.com/YyangZhiHeng/Elasticsearch/blob/master/picture/copy_to.png)
    
          * text：分词
          * keyword：不分词
@@ -589,7 +589,7 @@
          
                - 布尔
          
-                 ![juhe](E:\学习\elasticsearch\picture\juhe.png)
+                 ![juhe](https://github.com/YyangZhiHeng/Elasticsearch/blob/master/picture/juhe.png)
          
                
          
@@ -641,11 +641,11 @@
          
             5. Metric：
          
-               ![Metrics1.0](E:\学习\elasticsearch\picture\Metrics1.0.png)
+               ![Metrics1.0](https://github.com/YyangZhiHeng/Elasticsearch/blob/master/picture/Metrics1.0.png)
          
                ​		
          
-               ​		![Metric2.0](E:\学习\elasticsearch\picture\Metric2.0.png)
+               ​		![Metric2.0](https://github.com/YyangZhiHeng/Elasticsearch/blob/master/picture/Metric2.0.png)
          
             6. pipeline：
          
@@ -659,7 +659,7 @@
          
              1. 集群节点
          
-                ![jiedian](E:\学习\elasticsearch\picture\jiedian.png)
+                ![jiedian](https://github.com/YyangZhiHeng/Elasticsearch/blob/master/picture/jiedian.png)
          
                 - master node---主节点：
                 - master eligible---候选主节点：
@@ -676,34 +676,34 @@
          
              2. 脑裂问题：因为一些原因，比如网络问题，导致其他节点连不上主节点，剩下的节点又重新选举了一个节点作为主节点，当故障修复后，出现两个主节点，导致数据的不一致，这就是脑裂问题
          
-                ![naolie](E:\学习\elasticsearch\picture\naolie.png)
+                ![naolie](https://github.com/YyangZhiHeng/Elasticsearch/blob/master/picture/naolie.png)
          
              3. 分布式查询和储存
          
-                ![fenbushichucun](E:\学习\elasticsearch\picture\fenbushichucun.png)
+                ![fenbushichucun](https://github.com/YyangZhiHeng/Elasticsearch/blob/master/picture/fenbushichucun.png)
          
                 通过id用hash算法得到一个值，再对值进行%（取余）分片数，列如三个分片，对3取余有三个结果：0、1、2，分别对应三个分片，然后把数据储存到得到对应结果的分片中
          
                 **分布式储存举例：**
          
-                ![liezi](E:\学习\elasticsearch\picture\liezi.png)
+                ![liezi](https://github.com/YyangZhiHeng/Elasticsearch/blob/master/picture/liezi.png)
          
              4. 分布式查询
          
-                ![fenbushichaxun](E:\学习\elasticsearch\picture\fenbushichaxun.png)
+                ![fenbushichaxun](https://github.com/YyangZhiHeng/Elasticsearch/blob/master/picture/fenbushichaxun.png)
          
                 
          
              5. 总结
          
-                ![zongjie](E:\学习\elasticsearch\picture\zongjie.png)
+                ![zongjie](https://github.com/YyangZhiHeng/Elasticsearch/blob/master/picture/zongjie.png)
          
              6. 主节点故障转移
          
-                ![guzhangzhuanyi](E:\学习\elasticsearch\picture\guzhangzhuanyi.png)
+                ![guzhangzhuanyi](https://github.com/YyangZhiHeng/Elasticsearch/blob/master/picture/guzhangzhuanyi.png)
          
                 总结：
          
-                ![zongjie01](E:\学习\elasticsearch\picture\zongjie01.png)
+                ![zongjie01](https://github.com/YyangZhiHeng/Elasticsearch/blob/master/picture/zongjie01.png)
          
          13. 
